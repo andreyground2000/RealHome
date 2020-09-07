@@ -1,0 +1,747 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:400,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+  &::before, &::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #3c3c3c;
+}
+
+h2 {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 45px;
+  padding-bottom: 50px;
+}
+
+h3 {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+h4 {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 37px;
+  padding-bottom: 50px;
+}
+
+h5 {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 37px;
+}
+
+h6 {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 28px;
+  padding-bottom: 25px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-navigation ul, .for-clients ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-navigation li {
+  padding: 0 7px;
+  text-align: center;
+  line-height: 90px;
+}
+
+.social-networks li, .footer-sn li {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #3c3c3c;
+}
+
+.header-navigation a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bc-first a {
+  color: #e2574c;
+}
+
+.footer-navigation a, .for-clients a {
+  color: #ededed;
+}
+
+.footer-contacts a {
+  color: #e2574c;
+}
+
+.header-navigation a:hover {
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #f9f9f9;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.small-text {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.space {
+  padding-bottom: 10px;
+}
+
+.wrapper {
+  max-width: 100%;
+  min-width: 1400px;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 1, 0.2);
+}
+
+footer {
+  background-color: #303030;
+}
+
+/* HEADER */
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 75%;
+  max-width: 1500px;
+  height: 90px;
+  font-size: 18px;
+}
+
+.social-networks span {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 25px;
+  border: 2px solid #f2f2f2;
+
+  &:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 1, 0.5);
+  }
+}
+
+.header-sn-facebook {
+  background-image: url("../images/icons/f.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-sn-pinterest {
+  background-image: url("../images/icons/p.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-sn-instagram {
+  background-image: url("../images/icons/i.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-sn-google {
+  background-image: url("../images/icons/g.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* BREAD CRUMBS */
+
+.bread-crumbs {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 0 126px;
+  font-family: 'Raleway';
+  font-size: 14px;
+  font-weight: 700;
+  width: 1400px;
+  height: 100px;
+}
+
+.bc-first::after {
+  content: "\2192";
+  padding: 0 10px 0 10px;
+  color: #3c3c3c;
+}
+
+/* ABOUT */
+
+.about-company {
+  margin: 0 auto;
+  padding: 0 126px;
+  max-width: 1400px;
+  min-height: 590px;
+}
+
+.first-article {
+  display: flex;
+  margin: 0 auto;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+/* ADVANTAGES */
+
+.advantages {
+  background-color: #f6f6f6;
+}
+
+.advantages-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 126px;
+  max-width: 1400px;
+  min-height: 376px;
+  background-color: #f6f6f6;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 268px;
+    min-height: 240px;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+.whole-world {
+  background-image: url("../images/icons/whole-world.png");
+}
+
+.confidentially {
+  background-image: url("../images/icons/confidentially.png");
+}
+
+.good-previews {
+  background-image: url("../images/icons/good-previews.png");
+}
+
+.confidentially-02 {
+  background-image: url("../images/icons/confidentially-02.png");
+}
+
+.whole-world, .confidentially, .good-previews, .confidentially-02 {
+  background-repeat: no-repeat;
+  background-position: top 50px center;
+}
+
+/* OUR TEAM */
+
+.our-team {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 126px;
+  max-width: 1400px;
+  min-height: 680px;
+}
+
+.want-to-be {
+  position: absolute;
+  top: 110px;
+  right: 126px;
+  color: #e2574c;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 268px;
+    height: 390px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+  }
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  background-color: #f3f2f2;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 126px;
+  max-width: 1400px;
+  min-height: 178px;
+
+  form {
+    display: flex;
+  }
+}
+
+#email {
+  margin-right: 20px;
+  padding-left: 20px;
+  width: 387px;
+  height: 58px;
+  font-size: 18px;
+  border: 2px solid #e6e6e6;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#subscribe-button {
+  cursor: pointer;
+  width: 153px;
+  height: 58px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  background-color: #e2574c;
+  border-radius: 5px;
+
+  &:hover {
+    color: #fc5f45;
+    background-color: #fff;
+    border: 2px solid #e6e6e6;
+  }
+}
+
+/* FOOTER */
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 80px 126px 0 126px;
+  max-width: 1400px;
+  min-height: 384px;
+  color: #ededed;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-sn {
+  padding-top: 25px;
+
+  span {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 25px;
+    background-color: #fff;
+  }
+}
+
+.footer-sn-facebook {
+  background-image: url("../images/icons/f.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-sn-pinterest {
+  background-image: url("../images/icons/p.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-sn-instagram {
+  background-image: url("../images/icons/i.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-sn-google {
+  background-image: url("../images/icons/g.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-sn span:hover {
+  background-color: #e2574c;
+}
+
+.footer-navigation, .for-clients, .footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.space {
+  padding-bottom: 10px;
+}
+
+.collapsed, .hidden {
+  display: none !important;
+}
+
+.icon-hamburger {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  background: url(../images/icons/menu-hamburger.svg) no-repeat center;
+
+  &:hover {
+    box-shadow: 2px 2px 10px #ccc;
+    background-size: 55px;
+    background-color: #f2f2f2;
+  }
+}
+@media only screen and (min-width:320px) and (max-width:1023px) {
+  .desctop, .social-networks {
+    display: none;
+  }
+  header img {
+    width: 100px;
+  }
+  header {
+    width: 100vw;
+    height: 70px;
+  }
+  .header-menu {
+    width: 80vw;
+  }
+  main {
+    width: 100vw;
+  }
+  .about-company {
+    width: 100vw;
+    padding: 0px;
+  }
+  h2 {
+    padding: 20px 0px;
+    font-size: 23px;
+    width: auto;
+    height: auto;
+    line-height: 10px;
+    text-align: center;
+  }
+  article {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-company img {
+    width: 80vw;
+  }
+  .article-content {
+    padding: 0px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .advantages {
+    width: 100vw;
+    height: auto;
+  }
+  .advantages-wrapper {
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
+  div.whole-world,
+  div.confidentially,
+  div.good-previews,
+  div.confidentially-02 {
+    padding-top: 60px;
+    font-size: 15px;
+    line-height: 20px;
+    height: auto;
+    width: auto;
+    background-position: 50% 10%;
+    justify-content: flex-start;
+    
+  }
+  h3 {
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    line-height: 10px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .our-team {
+    width: 100vw;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: flex-start;
+  }
+  h4 {
+    font-size: 22px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .members {
+    width: 80vw;
+    margin: 0 auto;
+    height: auto;
+    flex-direction: column;
+    font-size: 15px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .member-04, .member-03, .member-02, .member-01 {
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .want-to-be {
+    position: static;
+    height: 20px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height:20px ;
+    
+  }
+  .newsletter {
+    width: 100vw;
+  }
+  .subscribe {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  h5 {
+    font-size: 22px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  #email {
+    width: 100%;
+    height: 38px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  #subscribe-button {
+    height: 38px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  footer {
+    width: 100vw;
+  }
+  .footer-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
+  .footer-social img {
+    width: 100px;
+  }
+  .footer-sn {
+    padding-top:20px
+  }
+  h6 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 22px;
+  }
+  footer a, span {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width:1024px) and (max-width:1365px) {
+  .desctop{
+    display: none;
+  }
+  .header-menu {
+    width: 95vw;
+  }
+  .social-networks {
+    display: block;
+  }
+  .social-networks li {
+    display: inline-block;
+  }
+  .about-company {
+    width: 100vw;
+    padding: 0px;
+  }
+  h2 {
+    padding: 30px 25.594px;
+    font-size: 27px;
+    width: auto;
+    height: auto;
+    line-height: 10px;
+    text-align: left;
+  }
+  header {
+    width: 100vw;
+    height: 80px;
+  }
+  .about-company img {
+    height: 100%;
+    width: 560px;
+  }
+  .first-article {
+    width: 95vw;
+    margin: 0 auto;
+  }
+  .advantages {
+    width: 100vw;
+  }
+  .advantages-wrapper {
+    width: 95vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 100px;
+  }
+  div.whole-world,
+  div.confidentially,
+  div.good-previews,
+  div.confidentially-02 {
+    background-position: top 53px center;
+  }
+  .our-team {
+    width: 100vw;
+    padding: 0 25.594px;
+  }
+  .members {
+    width: 100%;
+    flex-wrap: wrap;
+    
+  }
+  h4 {
+    padding: 30px 0;
+    font-size: 27px;
+    width: auto;
+    height: auto;
+    line-height: 10px;
+    text-align: left;
+  }
+  .want-to-be {
+    top: 20px;
+    right: 25.594px;
+  }
+  div.member-04, div.member-03, div.member-02, div.member-01 {
+    width: 350px;
+    margin-bottom: 30px;
+  }
+  div.members figure img {
+    width: 350px;
+    height: 290px;
+  }
+  .subscribe {
+    padding: 0px;
+    margin: 0px;
+    width: 95vw;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  h5 {
+    font-size: 27px;
+    width: auto;
+    height: auto;
+    line-height: 10px;
+    text-align: left;
+  }
+  footer {
+    width: 100vw;
+  }
+  .footer-wrapper {
+    width: 95vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+} 
+  @media only screen and (min-width:1366px) {
+    .icon-hamburger{
+      display: none;
+    }
+  }
+
